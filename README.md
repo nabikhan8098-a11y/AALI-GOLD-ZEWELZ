@@ -1,3 +1,3 @@
 # AALI-GOLD-ZEWELZ
 Aali Gold Website
-Website: www.aaligoldjewlz.com
+Website: https://aali-gold-jewelz.netlify.app/
