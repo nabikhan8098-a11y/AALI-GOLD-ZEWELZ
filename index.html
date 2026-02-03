@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AALI GOLD JEWELZ | Crafting Elegance Since 1985</title>
+     <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="main.css">
+    <!-- Add this in the head section after other CSS links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+ 
+    <!-- Header/Navigation -->
+<header class="header">
+    <div class="price-ticker">
+        <div class="ticker-content" id="tickerContent"></div>
+    </div>
+    <div class="container">
+        <div class="logo">
+            <a href="#">
+                <div class="logo-icon">
+                    <img src="gold-images\aali-logo.png" width="80px" height="80px">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">AALI GOLD JEWELZ</span>
+                    <span class="logo-tagline">Tradition Meets Elegance</span>
+                </div>
+            </a>
+        </div>
+         
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a  class="dropdown-toggle">
+                        Collections <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="collections/rings.html"><i class="fas fa-ring"></i> Rings</a>
+                        <a href="collections/necklaces.html"><i class="fa fa-diamond"></i> Necklaces</a>
+                        <a href="collections/hipbelt.html"><i class="fas fa-fire"></i> Hipbelt</a>
+                        <a href="collections/bracelets.html"><i class="fas fa-gem"></i> Bangles & Bracelets</a>
+                        <a href="collections/anklets.html"><i class="fas fa-gem"></i> Anklets & Toe Rings</a>
+                        <a href="collections/sets.html"><i class="fas fa-ear-deaf"></i> Sets</a>
+                        <a href="collections/chains.html"><i class="fas fa-chain"></i> Chains</a>
+                        <a href="collections/bridal.html"><i class="fas fa-crown"></i> Bridal Collection</a>
+                        <a href="collections/exclusive.html"><i class="fas fa-star"></i> Exclusive Collection</a>
+                    </div>
+                </li>
+                <li><a href="#metals">Metals & Pricing</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+        
+        <div class="header-icons">
+            <button class="search-btn" id="searchBtn">
+                <i class="fas fa-search"></i>
+            </button>
+            <a href="#" class="wishlist-icon" id="wishlistIcon">
+                <i class="far fa-heart"></i>
+                <span class="wishlist-count">0</span>
+            </a>
+            <a href="#" class="profile-icon" id="profileIcon">
+                <i class="fas fa-user-circle"></i>
+            </a>
+            <a href="#" class="cart-icon" id="cartIcon">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-count">2</span>
+            </a>
+        </div>
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <div class="search-overlay" id="searchOverlay">
+                <div class="search-container">
+                    <input type="text" placeholder="Search for gold jewellery, diamonds, collections..." id="searchInput">
+                    <button class="search-close" id="searchClose">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <button class="search-submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+        </div>
+        
+        
+    </div>
+     
+        
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h4 class="hero-subtitle">Luxury Gold Jewellery</h4>
+                <h1 class="hero-title">Discover Timeless Elegance</h1>
+                <p class="hero-description">Handcrafted gold jewellery with real-time pricing and secure checkout. Experience craftsmanship perfected over three generations.</p>
+                <div class="hero-btns">
+                    <a href="#collections" class="btn-gold">Shop Now</a>
+                    <a href="#collections" class="btn-outline">View Collections</a>
+                </div>
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fas fa-award"></i>
+                        <span>Hallmarked Gold</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure Checkout</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Free Delivery</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-gem"></i>
+                        <span>Certified Diamonds</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-container">
+                    <img src="gold-images\hero-necklace.jpg" alt="Luxury Gold Jewellery">
+                    <div class="floating-badge">
+                        <span>24K Pure Gold</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="collections" id="collections">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-subtitle">Exquisite Collections</h4>
+                <h2 class="section-title">Crafted With Perfection</h2>
+                <p class="section-description">Explore our handpicked collections of premium gold jewelry, each piece telling its own story of elegance and craftsmanship.</p>
+            </div>
+
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="gold-images\goldnecklace.webp" width="400" height="400" loading="eager">
+                        <div class="collection-overlay">
+                            <a href="collections/sets.html" class="view-collection">View Collection</a>
+                        </div>
+                    </div>
+                    <h3>Gold Sets</h3>
+                    <p>Elegant designs for every occasion</p>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="gold-images/diamondRing.webp" width="400" height="400" alt="Diamond Rings" loading="eager">
+                        <div class="collection-overlay">
+                            <a href="collections/rings.html" class="view-collection">View Collection</a>
+                        </div>
+                    </div>
+                    <h3>Diamond Rings</h3>
+                    <p>Sparkling diamonds set in gold</p>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="gold-images/necklease/GOLD STONE NECKLACES (12).jpg" width="400" height="400" alt="Gold Earrings" loading="eager">
+                        <div class="collection-overlay">
+                            <a href="collections/necklaces.html" class="view-collection">View Collection</a>
+                        </div>
+                    </div>
+                    <h3>Necklaces</h3>
+                    <p>From subtle studs to statement pieces</p>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-image">
+                        <img src="gold-images/bridal-set.webp" width="400" height="400" alt="Bridal Collection" loading="eager">
+                        <div class="collection-overlay">
+                            <a href="collections/bridal.html" class="view-collection">View Collection</a>
+                        </div>
+                    </div>
+                    <h3>Bridal Collection</h3>
+                    <p>For your special day and beyond</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <section class="metals-pricing" id="metals">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-subtitle">Live Gold Prices</h2>
+                <h3 class="section-title">Today's Gold Rates in Guntur</h3>
+                <p class="section-description">Real-time gold prices updated every 5 minutes. Prices are per gram of 24K, 22K, and 18K gold purity.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- 24K Gold -->
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3>24K Gold</h3>
+                        <span class="purity">99.9% Pure</span>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="current-price">
+                            <span class="price" id="gold24KPrice">₹6,500</span>
+                            <span class="unit">/ gram</span>
+                        </div>
+                        <div class="price-change negative" id="gold24KChange">
+                            <i class="fas fa-arrow-down"></i>
+                            <span>-₹25 ▼</span>
+                        </div>
+                        <p class="price-description">Highest purity gold, ideal for investment</p>
+                    </div>
+                </div>
+                
+                <!-- 22K Gold -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>22K Gold</h3>
+                        <span class="purity">91.6% Pure</span>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="current-price">
+                            <span class="price" id="gold22KPrice">₹5,950</span>
+                            <span class="unit">/ gram</span>
+                        </div>
+                        <div class="price-change negative" id="gold22KChange">
+                            <i class="fas fa-arrow-down"></i>
+                            <span>-₹23 ▼</span>
+                        </div>
+                        <p class="price-description">Most popular for jewellery making</p>
+                    </div>
+                </div>
+                
+                <!-- 18K Gold -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>18K Gold</h3>
+                        <span class="purity">75% Pure</span>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="current-price">
+                            <span class="price" id="gold18KPrice">₹4,870</span>
+                            <span class="unit">/ gram</span>
+                        </div>
+                        <div class="price-change negative" id="gold18KChange">
+                            <i class="fas fa-arrow-down"></i>
+                            <span>-₹19 ▼</span>
+                        </div>
+                        <p class="price-description">Durable for daily wear jewellery</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-info">
+                <p><i class="fas fa-info-circle"></i> <strong>Note:</strong> Prices are for gold only. Making charges, GST, and other taxes apply to jewellery. Last updated: <span id="lastUpdatedTime">Loading...</span></p>
+            </div>
+        </div>
+    </section>
+
+
+<!-- About Us Section -->
+
+<section class="about-section" id="about">
+    <div class="container about-container">
+        <!-- Header -->
+        <div class="about-header">
+            <h4 class="about-subtitle">Built on Trust, Crafted with Love</h4>
+            <h2 class="about-title">Purity in Every Gram, Elegance in Every Detail</h2>
+            <p class="about-tagline">Where tradition meets innovation in every meticulously crafted piece of jewellery that celebrates life's most precious moments.</p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="about-content-wrapper fade-in">
+            <!-- Left Column - Story -->
+            <div class="about-story">
+                <p class="story-highlight">
+                    "At AALI GOLD JEWELZ, we don't just create jewellery; we weave stories in gold, creating heirlooms that transcend generations."
+                </p>
+
+                <p class="story-text">
+                    Founded with a vision to redefine luxury jewellery in Guntur, <strong>AALI GOLD JEWELZ</strong> stands as a testament to exceptional craftsmanship and enduring beauty. Our journey began with a simple belief: every piece of jewellery should tell a story, preserve a memory, and become a cherished family legacy.
+                </p>
+
+                <p class="story-text">
+                    Under the visionary leadership of <strong>Azagar Ali Shaik</strong>, we've built a legacy that combines centuries-old goldsmithing techniques with contemporary design sensibilities. Each creation is born from a passion for perfection and a deep respect for traditional artistry.
+                </p>
+
+                <p class="story-text">
+                    We take immense pride in offering only the finest BIS-hallmarked 22K and 18K gold jewellery, meticulously crafted by master artisans who bring decades of experience to every piece. From intricate traditional designs to modern minimalist statements, our collections celebrate India's rich jewellery heritage while embracing contemporary elegance.
+                </p>
+            </div>
+
+            <!-- Right Column - Visual -->
+            <div class="about-visual">
+                <div class="about-main-image">
+                    <img src="gold-images\aboutjewelleryimg.png" alt="Master Artisan at Work">
+                    <div class="founder-signature"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid fade-in">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <span class="stat-number"data-count="5000">0</span>
+                <span class="stat-label">Happy Families</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <span class="stat-number" data-count="25">0</span>
+                <span class="stat-label">Master Artisans</span>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-history"></i>
+                </div>
+                <span class="stat-number" data-count="40">0</span>
+                <span class="stat-label">Years of Excellence</span>
+            </div>
+        </div>
+
+        <!-- Core Values -->
+        <div class="about-values fade-in">
+            <h3 class="values-title">Our Guiding Principles</h3>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-hands"></i>
+                    </div>
+                    <h4 class="value-title">Handcrafted Excellence</h4>
+                    <p class="value-description">Every piece is meticulously crafted by skilled artisans using traditional techniques passed down through generations.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="value-title">Certified Purity</h4>
+                    <p class="value-description">We guarantee BIS-hallmarked gold with complete transparency in pricing and uncompromising quality assurance.</p>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4 class="value-title">Customer Legacy</h4>
+                    <p class="value-description">Generations of families have trusted us with their precious moments, creating lasting relationships built on trust.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Craftsmanship Showcase -->
+        <div class="craftsmanship-showcase fade-in">
+            <h3 class="showcase-title">The Art of Goldsmithing</h3>
+            <p style="color: var(--taupe); max-width: 700px; margin: 0 auto 30px; line-height: 1.8;">
+                Our 8-step craftsmanship process ensures each piece meets our exacting standards of quality and beauty.
+            </p>
+            <div class="craftsmanship-steps">
+                <div class="craft-step">
+                    <div class="step-number">1</div>
+                    <h4 class="step-title">Design</h4>
+                    <p class="step-description">Conceptual sketches and CAD designs</p>
+                </div>
+
+                <div class="craft-step">
+                    <div class="step-number">2</div>
+                    <h4 class="step-title">Wax Modeling</h4>
+                    <p class="step-description">Creating detailed wax prototypes</p>
+                </div>
+
+                <div class="craft-step">
+                    <div class="step-number">3</div>
+                    <h4 class="step-title">Casting</h4>
+                    <p class="step-description">Precision gold casting</p>
+                </div>
+
+                <div class="craft-step">
+                    <div class="step-number">4</div>
+                    <h4 class="step-title">Finishing</h4>
+                    <p class="step-description">Hand-finishing and polishing</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="about-cta fade-in">
+            <h3 class="cta-title">Experience Timeless Craftsmanship</h3>
+            <p class="cta-description">Visit our store in Guntur to explore our collections and discover jewellery that tells your story.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn-gold pulse-gold">
+                    <i class="fas fa-map-marker-alt"></i> Visit Our Store
+                </a>
+                <a href="#collections" class="btn-outline1 pulse-gold">
+                    <i class="fas fa-gem"></i> Browse Collections
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Testimonials Section -->
+<section class="testimonials-section" id="testimonials">
+    <div class="container">
+        <div class="testimonials-header">
+            <h4 class="section-subtitle">Customer Stories</h4>
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p>Hear from our satisfied customers who have experienced the AALI GOLD JEWELZ difference in craftsmanship and service.</p>
+        </div>
+
+        <!-- Testimonials Slider -->
+        <div class="testimonials-slider-container">
+            <div class="testimonials-track" id="testimonialsTrack">
+                <!-- Slide 1 -->
+                <div class="testimonial-slide active">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-quote">"My wedding necklace from AALI GOLD JEWELZ was the highlight of my bridal look. The craftsmanship is impeccable and I received countless compliments."</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-value">5.0</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="gold-images/test1.jpg" alt="Priya Sharma" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAiIGhlaWdodD0iNzAiIHZpZXdCb3g9IjAgMCA3MCA3MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIzNSIgY3k9IjM1IiByPSIzNSIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzE0N185NzQpIi8+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzE0N185NzQiIHgxPSIzNSIgeTE9IjAiIHgyPSIzNSIgeTI9IjcwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iI0M1QTAyOCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzg2OTkxNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjx0ZXh0IHg9IjM1IiB5PSI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiPkg8L3RleHQ+PC9zdmc+'">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Priya Sharma</h4>
+                                <p class="author-city">
+                                    <i class="fas fa-map-marker-alt"></i> Mumbai
+                                </p>
+                                <span class="testimonial-jewellery">Bridal Necklace Set</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-quote">"The gold purity and finishing of my grandmother's anniversary gift was outstanding. AALI GOLD JEWELZ made the entire process seamless and special."</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-value">5.0</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="gold-images/test2.jpg" alt="Rajesh Kumar" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAiIGhlaWdodD0iNzAiIHZpZXdCb3g9IjAgMCA3MCA3MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIzNSIgY3k9IjM1IiByPSIzNSIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzE0N185NzQpIi8+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzE0N185NzQiIHgxPSIzNSIgeTE9IjAiIHgyPSIzNSIgeTI9IjcwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iI0M1QTAyOCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzg2OTkxNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjx0ZXh0IHg9IjM1IiB5PSI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiPkg8L3RleHQ+PC9zdmc+'">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Rajesh Kumar</h4>
+                                <p class="author-city">
+                                    <i class="fas fa-map-marker-alt"></i> Guntur
+                                </p>
+                                <span class="testimonial-jewellery">Traditional Gold Bangle</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-quote">"I was nervous about buying expensive jewellery online, but AALI's transparency with pricing and certification gave me complete confidence."</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-value">5.0</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="gold-images/test3.jpg" alt="Anjali Mehta" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAiIGhlaWdodD0iNzAiIHZpZXdCb3g9IjAgMCA3MCA3MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIzNSIgY3k9IjM1IiByPSIzNSIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzE0N185NzQpIi8+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzE0N185NzQiIHgxPSIzNSIgeTE9IjAiIHgyPSIzNSIgeTI9IjcwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iI0M1QTAyOCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzg2OTkxNCIvPjwvbGluZGFyR3JhZGllbnQ+PC9kZWZzPjx0ZXh0IHg9IjM1IiB5PSI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiPkg8L3RleHQ+PC9zdmc+'">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Anjali Mehta</h4>
+                                <p class="author-city">
+                                    <i class="fas fa-map-marker-alt"></i> Delhi
+                                </p>
+                                <span class="testimonial-jewellery">Diamond Earrings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-quote">"Three generations of our family have trusted AALI GOLD JEWELZ. Their timeless designs and commitment to quality make them our go-to jewellers."</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-value">5.0</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="gold-images/test4.jpg" alt="Suresh Reddy" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAiIGhlaWdodD0iNzAiIHZpZXdCb3g9IjAgMCA3MCA3MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIzNSIgY3k9IjM1IiByPSIzNSIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzE0N185NzQpIi8+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzE0N185NzQiIHgxPSIzNSIgeTE9IjAiIHgyPSIzNSIgeTI9IjcwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iI0M1QTAyOCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzg2OTkxNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjx0ZXh0IHg9IjM1IiB5PSI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiPkg8L3RleHQ+PC9zdmc+'">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Suresh Reddy</h4>
+                                <p class="author-city">
+                                    <i class="fas fa-map-marker-alt"></i> Hyderabad
+                                </p>
+                                <span class="testimonial-jewellery">Family Heirloom Set</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p class="testimonial-quote">"The custom engagement ring they crafted exceeded all expectations. They understood exactly what I wanted and delivered perfection."</p>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="rating-value">4.0</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="gold-images/test5.jpg" alt="Vikram Singh" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzAiIGhlaWdodD0iNzAiIHZpZXdCb3g9IjAgMCA3MCA3MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIzNSIgY3k9IjM1IiByPSIzNSIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzE0N185NzQpIi8+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzE0N185NzQiIHgxPSIzNSIgeTE9IjAiIHgyPSIzNSIgeTI9IjcwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iI0M1QTAyOCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzg2OTkxNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjx0ZXh0IHg9IjM1IiB5PSI0MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjI0IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgYWxpZ25tZW50LWJhc2VsaW5lPSJtaWRkbGUiPkg8L3RleHQ+PC9zdmc+'">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Vikram Singh</h4>
+                                <p class="author-city">
+                                    <i class="fas fa-map-marker-alt"></i> Bangalore
+                                </p>
+                                <span class="testimonial-jewellery">Custom Diamond Ring</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Navigation -->
+        <div class="testimonial-nav">
+            <button class="testimonial-nav-btn" id="prevTestimonial">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="testimonial-dots" id="testimonialDots">
+                <!-- Dots will be added by JavaScript -->
+            </div>
+            
+            <button class="testimonial-nav-btn" id="nextTestimonial">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Testimonials CTA -->
+        <div class="testimonials-cta">
+            <p>Share your experience with us</p>
+            <a href="#contact" class="btn-gold">
+                <i class="fas fa-pen"></i> Write a Review
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <h4 class="section-subtitle">Get In Touch</h4>
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-description">Visit our store, call us, or send a message for any inquiries</p>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <a href="https://maps.app.goo.gl/Vok7LKV2tzbFuB2F6"
+                    target="_blank"
+                    style="color: var(--taupe); text-decoration: none; transition: var(--transition);"
+                    onmouseover="this.style.color='var(--gold-primary)';"
+                    onmouseout="this.style.color='var(--taupe)';">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h4>Visit Our Store</h4>
+                    <p>
+                            4th line Syamala Nagar-Guntur, Guntur District<br>AP 522006, India
+                        </a>
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <a href="tel:+9108634611770"
+                    style="color: var(--taupe); text-decoration: none; transition: var(--transition);"
+                    onmouseover="this.style.color='var(--gold-primary)';"
+                    onmouseout="this.style.color='var(--taupe)';">
+                    <i class="fas fa-phone"></i>
+                    <h4>Call Us</h4>
+                    <p>
+                       
+                            +91 08634611770
+                        </a><br>
+                        Mon-Sat: 10AM - 8PM IST
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email Us</h4>
+                    <p>
+                        <a href="mailto:info@aaligoldjewelz.com"
+                           style="color: var(--taupe); text-decoration: none; transition: var(--transition);"
+                           onmouseover="this.style.color='var(--gold-primary)';"
+                           onmouseout="this.style.color='var(--taupe)';">
+                            info@aaligoldjewelz.com
+                        </a><br>
+                        <a href="mailto:customercare@aaligoldjewelz.com"
+                           style="color: var(--taupe); text-decoration: none; transition: var(--transition);"
+                           onmouseover="this.style.color='var(--gold-primary)';"
+                           onmouseout="this.style.color='var(--taupe)';">
+                            customercare@aaligoldjewelz.com
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text"  name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text"  name="phone" id="phone" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" name="message" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-gold">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Shopping Cart</h3>
+            <button class="cart-close" id="cartClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="cart-items">
+            <!-- Cart items will be loaded here -->
+        </div>
+        
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-price">$3,450.00</span>
+            </div>
+            <div class="cart-actions">
+                <a href="checkout.html" class="btn-gold">Checkout</a>
+                <a href="#collections" class="btn-outline2">Continue Shopping</a>
+            </div>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+
+    <!-- Wishlist Sidebar -->
+    <div class="wishlist-sidebar" id="wishlistSidebar">
+        <div class="wishlist-header">
+            <h3>Your Wishlist</h3>
+            <button class="wishlist-close" id="wishlistClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="wishlist-items">
+            <!-- Wishlist items will be loaded here -->
+        </div>
+
+        <div class="wishlist-footer">
+            <div class="cart-actions">
+                <a href="#collections" class="btn-gold">Continue Shopping</a>
+            </div>
+        </div>
+    </div>
+    <div class="wishlist-overlay" id="wishlistOverlay"></div>
+
+
+    <a href="https://wa.me/918341085415"
+   class="whatsapp-luxury"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+   <i class="fab fa-whatsapp"></i>
+</a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <a href="#">
+                            <div class="logo-icon">
+                                <img src="gold-images/aali-logo.png" width="80px" height="80px">
+                            </div>
+                            <div class="logo-text">
+                                <span class="logo-main">AALI GOLD JEWELZ</span>
+                                <span class="logo-tagline">Tradition Meets Elegance</span>
+                            </div>
+                        </a>
+                    </div>
+                    <p class="footer-description">Creating timeless jewellery pieces that celebrate life's precious moments with unparalleled craftsmanship and quality.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://in.pinterest.com/"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="collections/necklaces.html">Necklaces & Pendants</a></li>
+                        <li><a href="collections/rings.html">Rings</a></li>
+                        <li><a href="collections/hipbelt.html">Hipbelt</a></li>
+                        <li><a href="collections/anklets.html">Anklets & Toe Rings</a></li>
+                        <li><a href="collections/Sets.html">Sets</a></li>
+                        <li><a href="collections/chains.html">Chains</a></li>
+                        <li><a href="collections/bracelets.html">Bracelets & Bangles</a></li>
+                        <li><a href="collections/exclusive.html">Exclusive Collections</a></li>
+                        <li><a href="collections/bridal.html">Bridal Collection</a></li>
+                        
+
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="customerService\FAQ.html">FAQ</a></li>
+                        <li><a href="customerService/FAQ.html#quality-assurance">Shipping</a></li>
+                        <li><a href="customerService/FAQ.html#shipping-delivery">Returns</a></li>
+                        <li><a href="customerService/jwelleryCare.html">Jewellery Care</a></li>
+                        <li><a href="customerService/privacyPolicy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive offers, new collection launches, and jewellery care tips.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-gold">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                
+             <img class="lion-logo" src="gold-images\Made-in-india-logo.jpg" height="70px" >
+             <p>Made in India.</p>
+             <p>&copy; 2026 AALI GOLD JEWELZ. All rights reserved. | <span id="currentYear"></span></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Authentication Overlay -->
+<div class="auth-overlay" id="authOverlay">
+    <button class="auth-close" id="authClose">
+        <i class="fas fa-times"></i>
+    </button>
+    <div class="auth-container">
+        <div class="auth-tabs">
+            <button class="auth-tab active" data-tab="login">Sign In</button>
+            <button class="auth-tab" data-tab="register">Sign Up</button>
+        </div>
+        
+        <div class="auth-content">
+            <!-- Login Form -->
+            <form class="auth-form active" id="loginForm" data-tab="login">
+                <h3>Welcome Back</h3>
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                </div>
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="rememberMe">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password" id="forgotPassword">Forgot Password?</a>
+                </div>
+                <button type="submit" class="auth-submit">Sign In</button>
+                
+                <div class="auth-divider">
+                    <span>Or continue with</span>
+                </div>
+                
+                <div class="social-login">
+                    <button type="button" class="social-btn google">
+                        <i class="fab fa-google"></i>
+                        Google
+                    </button>
+                    <button type="button" class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        Facebook
+                    </button>
+                </div>
+                
+                <div class="auth-footer">
+                    <p>Don't have an account? <a href="#" class="switch-to-register">Sign Up</a></p>
+                </div>
+            </form>
+            
+            <!-- Register Form -->
+            <form class="auth-form" id="registerForm" data-tab="register">
+                <h3>Create Account</h3>
+                <div class="form-group">
+                    <label for="registerName">Full Name</label>
+                    <input type="text" id="registerName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email Address</label>
+                    <input type="email" id="registerEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPhone">Phone Number</label>
+                    <input type="tel" id="registerPhone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Confirm Password</label>
+                    <input type="password" id="registerConfirmPassword" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit" class="auth-submit">Create Account</button>
+                
+                <div class="auth-divider">
+                    <span>Or sign up with</span>
+                </div>
+                
+                <div class="social-login">
+                    <button type="button" class="social-btn google">
+                        <i class="fab fa-google"></i>
+                        Google
+                    </button>
+                    <button type="button" class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        Facebook
+                    </button>
+                </div>
+                
+                <div class="auth-footer">
+                    <p>Already have an account? <a href="#" class="switch-to-login">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Account Panel (shown when user is logged in) -->
+<div class="account-panel" id="accountPanel">
+    <button class="wishlist-close" id="panelClose">
+        <i class="fas fa-times"></i>
+    </button>
+    <div class="account-header">
+        <div class="user-avatar" id="userAvatar">
+            <i class="fas fa-user"></i>
+        </div>
+        <h3 class="user-name" id="userName">John Doe</h3>
+        <p class="user-email" id="userEmail">john.doe@example.com</p>
+
+         <!-- ADD LOGOUT BUTTON HERE -->
+    
+    </div>
+    
+    <div class="account-menu">
+        <a href="#" class="account-menu-item active" data-section="dashboard">
+            <i class="fas fa-user"></i>
+            <span>My Profile</span>
+        </a>
+        <a href="#" class="account-menu-item" data-section="orders">
+            <i class="fas fa-shopping-bag"></i>
+            <span>My Orders</span>
+        </a>
+        <a href="#" class="account-menu-item" data-section="addresses">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Addresses</span>
+        </a>
+
+        <a href="#" class="account-menu-item logout-item" id="logoutBtn">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </a>
+    </div>
+    
+    <div class="account-content active" id="dashboardSection">
+        <div class="account-details">
+            <h3>Account Details</h3>
+            <div class="account-details-grid">
+                <div class="detail-item">
+                    <span class="detail-label">Name:</span>
+                    <span class="detail-value" id="accountName">John Doe</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Email:</span>
+                    <span class="detail-value" id="accountEmail">john.doe@example.com</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Phone:</span>
+                    <span class="detail-value" id="accountPhone">+91 9876543210</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Member Since:</span>
+                    <span class="detail-value" id="memberSince">January 2024</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="account-content" id="ordersSection">
+        <div class="orders-section">
+            <h3>My Orders</h3>
+            <div class="order-item">
+                <div class="order-header">
+                    <span class="order-id">Order #AGJ202401001</span>
+                    <span class="order-date">Jan 15, 2024</span>
+                </div>
+                <div class="order-status delivered">Delivered</div>
+                <div class="order-products">
+                    <div class="order-product">
+                        <img src="gold-images/goldnecklace.webp" alt="Gold Necklace">
+                    </div>
+                    <div class="order-product">
+                        <img src="gold-images/diamondRing.webp" alt="Diamond Ring">
+                    </div>
+                </div>
+            </div>
+            <div class="order-item">
+                <div class="order-header">
+                    <span class="order-id">Order #AGJ202312005</span>
+                    <span class="order-date">Dec 20, 2023</span>
+                </div>
+                <div class="order-status processing">Processing</div>
+                <div class="order-products">
+                    <div class="order-product">
+                        <img src="gold-images/bridal-set.webp" alt="Bridal Set">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="account-content" id="wishlistSection">
+        <div class="wishlist-section">
+            <h3>My Wishlist</h3>
+            <div class="no-orders">
+                <i class="far fa-heart"></i>
+                <p>Your wishlist is empty</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="account-content" id="addressesSection">
+        <div class="account-details">
+            <h3>Saved Addresses</h3>
+            <div class="no-orders">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>No saved addresses</p>
+            </div>
+        </div>
+    </div>
+ <!--   
+    <div class="account-content" id="logoutSection">
+        <button class="logout-btn" id="logoutBtn">
+            <i class="fas fa-sign-out-alt"></i>
+            Logout
+        </button>
+    </div> -->
+</div>
+<!--review button-->
+<div class="review-modal-overlay" id="reviewModal">
+    <div class="review-modal-container">
+        <button class="review-modal-close" id="closeReviewModal">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <div class="review-header">
+            <h3>Write a Review</h3>
+            <p>Share your experience with AALI GOLD JEWELZ</p>
+        </div>
+        
+        <form id="reviewForm">
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" id="reviewerName" required placeholder="e.g. Sarah Jenkins">
+            </div>
+            
+            <div class="form-group">
+                <label>City</label>
+                <input type="text" id="reviewerCity" required placeholder="e.g. Mumbai">
+            </div>
+            
+            <div class="form-group">
+                <label>Jewellery Purchased</label>
+                <input type="text" id="reviewerItem" required placeholder="e.g. Diamond Necklace">
+            </div>
+            
+            <div class="form-group">
+                <label>Rating</label>
+                <div class="star-rating-input">
+                    <input type="radio" id="star5" name="rating" value="5" checked /><label for="star5" title="5 stars"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star"><i class="fas fa-star"></i></label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Your Review</label>
+                <textarea id="reviewerText" rows="4" required placeholder="Tell us about the craftsmanship and service..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn-gold" style="width: 100%;">Submit Review</button>
+        </form>
+    </div>
+</div>
+
+    <!-- Add this before the closing body tag -->
+    <script src="auth.js"></script>
+    <script src="store.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AALI GOLD JEWELZ | Secure Checkout</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="auth.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+<header class="header">
+    <div class="price-ticker">
+        <div class="ticker-content" id="tickerContent"></div>
+    </div>
+    <div class="container">
+        <div class="logo">
+            <a href="#">
+                <div class="logo-icon">
+                    <img src="gold-images\aali-logo.png" width="80px" height="80px">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">AALI GOLD JEWELZ</span>
+                    <span class="logo-tagline">Tradition Meets Elegance</span>
+                </div>
+            </a>
+        </div>
+         
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a  class="dropdown-toggle">
+                        Collections <i class="fas fa-chevron-down dropdown-arrow"></i>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="collections/rings.html"><i class="fas fa-ring"></i> Rings</a>
+                        <a href="collections/necklaces.html"><i class="fa fa-diamond"></i> Necklaces</a>
+                        <a href="collections/hipbelt.html"><i class="fas fa-fire"></i> Hipbelt</a>
+                        <a href="collections/bracelets.html"><i class="fas fa-gem"></i> Bangles & Bracelets</a>
+                        <a href="collections/anklets.html"><i class="fas fa-gem"></i> Anklets & Toe Rings</a>
+                        <a href="collections/sets.html"><i class="fas fa-ear-deaf"></i> Sets</a>
+                        <a href="collections/chains.html"><i class="fas fa-chain"></i> Chains</a>
+                        <a href="collections/bridal.html"><i class="fas fa-crown"></i> Bridal Collection</a>
+                        <a href="collections/exclusive.html"><i class="fas fa-star"></i> Exclusive Collection</a>
+                    </div>
+                </li>
+                <li><a href="#metals">Metals & Pricing</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+        
+        <div class="header-icons">
+            <a href="#" class="profile-icon" id="profileIcon">
+                <i class="fas fa-user-circle"></i>
+            </a>
+        </div>
+        
+    </div>
+    <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <input type="text" placeholder="Search for gold jewellery, diamonds, collections..." id="searchInput">
+                <button class="search-close" id="searchClose">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button class="search-submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    
+</header>
+
+    <!-- Checkout Container -->
+    <main class="checkout-container">
+        <div class="container">
+            <div class="checkout-header">
+                <h1><i class="fas fa-lock"></i> Secure Checkout</h1>
+                <p class="checkout-steps">
+                    <span class="step active"><i class="fas fa-shopping-cart"></i> Cart</span>
+                    <span class="step active"><i class="fas fa-user"></i> Details</span>
+                    <span class="step"><i class="fas fa-credit-card"></i> Payment</span>
+                    <span class="step"><i class="fas fa-check"></i> Confirm</span>
+                </p>
+            </div>
+
+            <div class="checkout-grid">
+                <!-- Left Column: Order Summary -->
+                <div class="order-summary">
+                    <h2><i class="fas fa-receipt"></i> Order Summary</h2>
+                    
+                    <div class="order-items" id="orderItems">
+                        <!-- Dynamic content from checkout.js -->
+                    </div>
+
+                    <div class="price-breakdown">
+                        <h3><i class="fas fa-calculator"></i> Price Breakdown</h3>
+                        
+                        <div class="breakdown-row">
+                            <span>Jewel Value</span>
+                            <span id="goldValue">₹0</span>
+                        </div>
+                        
+                        <div class="breakdown-row">
+                            <span>Making Charges</span>
+                            <span id="makingCharges">₹0</span>
+                        </div>
+                        
+                        <div class="gst-breakdown">
+                            <h4>GST Breakdown</h4>
+                            <div class="breakdown-row">
+                                <span>Gold GST (3%)</span>
+                                <span id="goldGST">₹0</span>
+                            </div>
+                            <div class="breakdown-row">
+                                <span>Making Charges GST (5%)</span>
+                                <span id="makingGST">₹0</span>
+                            </div>
+                            <div class="breakdown-row">
+                                <span>Total GST</span>
+                                <span id="totalGST">₹0</span>
+                            </div>
+                        </div>
+                        
+                        <div class="breakdown-row subtotal">
+                            <span>Subtotal</span>
+                            <span id="subtotal">₹0</span>
+                        </div>
+                        
+                        <div class="breakdown-row total">
+                            <strong>Total Payable</strong>
+                            <strong id="totalPayable">₹0</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Customer Form -->
+                <div class="customer-form">
+                    <h2><i class="fas fa-user-circle"></i> Customer Details</h2>
+                    
+                    <form id="checkoutForm">
+                        <div class="form-group">
+                            <label for="customerName"><i class="fas fa-user"></i> Full Name *</label>
+                            <input type="text" id="customerName" name="customerName" required 
+                                   placeholder="Enter your full name" autocomplete="name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="customerPhone"><i class="fas fa-phone"></i> Mobile Number *</label>
+                            <input type="tel" id="customerPhone" name="customerPhone" required 
+                                   placeholder="10-digit mobile number" pattern="[0-9]{10}" autocomplete="tel">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="customerEmail"><i class="fas fa-envelope"></i> Email Address</label>
+                            <input type="email" id="customerEmail" name="customerEmail" 
+                                   placeholder="your@email.com" autocomplete="email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="customerAddress"><i class="fas fa-home"></i> Complete Address *</label>
+                            <textarea id="customerAddress" name="customerAddress" required 
+                                      placeholder="House no, Street, Area, Landmark" rows="3"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="customerPincode"><i class="fas fa-map-marker-alt"></i> Pincode *</label>
+                            <input type="text" id="customerPincode" name="customerPincode" required 
+                                   placeholder="6-digit pincode" pattern="[0-9]{6}">
+                        </div>
+                        
+                        <div class="form-group important">
+                            <label for="customerAadhaar"><i class="fas fa-id-card"></i> Aadhaar Number *</label>
+                            <input type="text" id="customerAadhaar" name="customerAadhaar" required 
+                                   placeholder="12-digit Aadhaar number" pattern="[0-9]{12}"
+                                   title="Aadhaar number is mandatory for high-value purchases">
+                            <small class="form-note">Required by RBI guidelines for jewelry purchases above ₹2 lakhs</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="paymentMethod"><i class="fas fa-credit-card"></i> Payment Method *</label>
+                            <select id="paymentMethod" name="paymentMethod" required>
+                                <option value="">Select payment method</option>
+                                <option value="upi">UPI (Google Pay/PhonePe/PayTM)</option>
+                                <option value="netbanking">Net Banking</option>
+                                <option value="card">Credit/Debit Card</option>
+                                <option value="cod">Cash on Delivery (COD)</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group" id="paymentDetails" style="display: none;">
+                            <!-- Dynamic payment fields will be added here -->
+                        </div>
+                        
+                        <div class="terms-agreement">
+                            <input type="checkbox" id="termsAgree" class="box" name="termsAgree" required>
+                            <label for="termsAgree">
+                                I agree to the <a href="#" target="_blank">Terms & Conditions</a> and confirm that all information provided is accurate.
+                            </label>
+                        </div>
+                        
+                        <div class="checkout-actions">
+                            <button type="button" class="btn-outline" id="backToCart">
+                                <i class="fas fa-arrow-left"></i> Back to Cart
+                            </button>
+                            <button type="submit" class="btn-gold" id="placeOrderBtn">
+                                <i class="fas fa-lock"></i> Place Secure Order
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Order Success Modal -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal">
+            <div class="modal-header success">
+                <i class="fas fa-check-circle"></i>
+                <h2>Order Confirmed!</h2>
+            </div>
+            
+            <div class="modal-body">
+                <div class="order-success">
+                    <div class="success-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    
+                    <h3>Thank You for Your Purchase!</h3>
+                    <p>Your order has been successfully placed and is being processed.</p>
+                    
+                    <div class="order-details">
+                        <div class="order-info">
+                            <strong>Order ID:</strong> 
+                            <span id="orderIdDisplay">AALI-000000</span>
+                        </div>
+                        <div class="order-info">
+                            <strong>Order Date:</strong> 
+                            <span id="orderDateDisplay">01 Jan 2026</span>
+                        </div>
+                        <div class="order-info">
+                            <strong>Total Amount:</strong> 
+                            <span id="orderTotalDisplay">₹0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="order-actions">
+                        <button class="btn-outline" id="downloadInvoiceBtn">
+                            <i class="fas fa-download"></i> Download Invoice
+                        </button>
+                        <button class="btn-gold" id="backToHomeBtn">
+                            <i class="fas fa-home"></i> Back to Home
+                        </button>
+                    </div>
+                    
+                    <div class="shipping-info">
+                        <p><i class="fas fa-shipping-fast"></i> Your order will be delivered in 5-7 business days.</p>
+                        <p><i class="fas fa-envelope"></i> Order confirmation and tracking details will be sent to your email.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner">
+            <i class="fas fa-gem"></i>
+        </div>
+        <p>Processing your order...</p>
+    </div>
+
+    <div class="account-panel" id="accountPanel">
+    <button class="wishlist-close" id="panelClose">
+        <i class="fas fa-times"></i>
+    </button>
+    <div class="account-header">
+        <div class="user-avatar" id="userAvatar">
+            <i class="fas fa-user"></i>
+        </div>
+        <h3 class="user-name" id="userName">John Doe</h3>
+        <p class="user-email" id="userEmail">john.doe@example.com</p>
+
+         <!-- ADD LOGOUT BUTTON HERE -->
+    
+    </div>
+    
+    <div class="account-menu">
+        <a href="#" class="account-menu-item active" data-section="dashboard">
+            <i class="fas fa-user"></i>
+            <span>My Profile</span>
+        </a>
+        <a href="#" class="account-menu-item" data-section="orders">
+            <i class="fas fa-shopping-bag"></i>
+            <span>My Orders</span>
+        </a>
+        <a href="#" class="account-menu-item" data-section="addresses">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Addresses</span>
+        </a>
+
+        <a href="#" class="account-menu-item logout-item" id="logoutBtn">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </a>
+    </div>
+    
+    <div class="account-content active" id="dashboardSection">
+        <div class="account-details">
+            <h3>Account Details</h3>
+            <div class="account-details-grid">
+                <div class="detail-item">
+                    <span class="detail-label">Name:</span>
+                    <span class="detail-value" id="accountName">John Doe</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Email:</span>
+                    <span class="detail-value" id="accountEmail">john.doe@example.com</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Phone:</span>
+                    <span class="detail-value" id="accountPhone">+91 9876543210</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Member Since:</span>
+                    <span class="detail-value" id="memberSince">January 2024</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="account-content" id="ordersSection">
+        <div class="orders-section">
+            <h3>My Orders</h3>
+            <div class="order-item">
+                <div class="order-header">
+                    <span class="order-id">Order #AGJ202401001</span>
+                    <span class="order-date">Jan 15, 2024</span>
+                </div>
+                <div class="order-status delivered">Delivered</div>
+                <div class="order-products">
+                    <div class="order-product">
+                        <img src="gold-images/goldnecklace.webp" alt="Gold Necklace">
+                    </div>
+                    <div class="order-product">
+                        <img src="gold-images/diamondRing.webp" alt="Diamond Ring">
+                    </div>
+                </div>
+            </div>
+            <div class="order-item">
+                <div class="order-header">
+                    <span class="order-id">Order #AGJ202312005</span>
+                    <span class="order-date">Dec 20, 2023</span>
+                </div>
+                <div class="order-status processing">Processing</div>
+                <div class="order-products">
+                    <div class="order-product">
+                        <img src="gold-images/bridal-set.webp" alt="Bridal Set">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="account-content" id="wishlistSection">
+        <div class="wishlist-section">
+            <h3>My Wishlist</h3>
+            <div class="no-orders">
+                <i class="far fa-heart"></i>
+                <p>Your wishlist is empty</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="account-content" id="addressesSection">
+        <div class="account-details">
+            <h3>Saved Addresses</h3>
+            <div class="no-orders">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>No saved addresses</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="auth-overlay" id="authOverlay">
+    <button class="auth-close" id="authClose">
+        <i class="fas fa-times"></i>
+    </button>
+    <div class="auth-container">
+        <div class="auth-tabs">
+            <button class="auth-tab active" data-tab="login">Sign In</button>
+            <button class="auth-tab" data-tab="register">Sign Up</button>
+        </div>
+        
+        <div class="auth-content">
+            <!-- Login Form -->
+            <form class="auth-form active" id="loginForm" data-tab="login">
+                <h3>Welcome Back</h3>
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                </div>
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="rememberMe">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password" id="forgotPassword">Forgot Password?</a>
+                </div>
+                <button type="submit" class="auth-submit">Sign In</button>
+                
+                <div class="auth-divider">
+                    <span>Or continue with</span>
+                </div>
+                
+                <div class="social-login">
+                    <button type="button" class="social-btn google">
+                        <i class="fab fa-google"></i>
+                        Google
+                    </button>
+                    <button type="button" class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        Facebook
+                    </button>
+                </div>
+                
+                <div class="auth-footer">
+                    <p>Don't have an account? <a href="#" class="switch-to-register">Sign Up</a></p>
+                </div>
+            </form>
+            
+            <!-- Register Form -->
+            <form class="auth-form" id="registerForm" data-tab="register">
+                <h3>Create Account</h3>
+                <div class="form-group">
+                    <label for="registerName">Full Name</label>
+                    <input type="text" id="registerName" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email Address</label>
+                    <input type="email" id="registerEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPhone">Phone Number</label>
+                    <input type="tel" id="registerPhone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password</label>
+                    <input type="password" id="registerPassword" placeholder="Create a password" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Confirm Password</label>
+                    <input type="password" id="registerConfirmPassword" placeholder="Confirm your password" required>
+                </div>
+                <button type="submit" class="auth-submit">Create Account</button>
+                
+                <div class="auth-divider">
+                    <span>Or sign up with</span>
+                </div>
+                
+                <div class="social-login">
+                    <button type="button" class="social-btn google">
+                        <i class="fab fa-google"></i>
+                        Google
+                    </button>
+                    <button type="button" class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        Facebook
+                    </button>
+                </div>
+                
+                <div class="auth-footer">
+                    <p>Already have an account? <a href="#" class="switch-to-login">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <script src="store.js"></script>
+    <script src="checkout.js"></script>
+     <script src="auth.js"></script>
+      <script src="script.js"></script>
+</body>
+</html>
